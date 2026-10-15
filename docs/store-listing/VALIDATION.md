@@ -1,5 +1,7 @@
 # Validación de web y ficha — 15 de octubre de 2026
 
+Registro de la publicación inicial `738fef8`. El rediseño interactivo posterior tiene su propia [validación y reproducción](../web-motion.md).
+
 - Se generaron seis páginas estáticas, en español, inglés y francés, sin servicio de traducción remoto.
 - Se verificaron idioma HTML, un título principal por página, iconos, alternativas de imágenes, enlaces locales, anclas y reproducción exacta del generador.
 - Se comprobó el tamaño y formato del PNG original de launcher antes de incorporarlo al sitio. No se modificó la imagen.

@@ -1,6 +1,7 @@
 """Build the static Atelier website. Python standard library only."""
 from html import escape as esc
 from pathlib import Path
+import json
 
 ROOT = Path(__file__).resolve().parents[1]
 CONTACT = 'mtcorp0505@gmail.com'
@@ -210,15 +211,19 @@ PROVIDERS = [
 def url(lang, page):
  return ('/' if lang == 'es' else f'/{lang}/') + page
 
+def island(lang, page, name):
+ data=json.loads((ROOT/'assets/components.json').read_text(encoding='utf-8'))[lang][page][name]
+ return f'<div data-component="{name}" data-props="{esc(json.dumps(data["props"],ensure_ascii=False),quote=True)}">{data["html"]}</div>'
+
 def header(lang, page):
  c = COPY[lang]
  links = ''.join(f'<a href="{url(lang,"index.html")}#{anchor}">{esc(text)}</a>' for anchor,text in zip(['herramientas','preguntas'],c['nav'][:2]))
- options = ''.join(f'<option value="{url(code,page)}"'+(' selected' if code==lang else '')+f'>{esc(d["name"])}</option>' for code,d in COPY.items())
  return f'''<a class="skip-link" href="#main">{esc(c['skip'])}</a>
+ <div class="reading-progress" aria-hidden="true"></div>
  <header class="site-header"><div class="shell nav">
  <a class="brand" href="{url(lang,'index.html')}"><img src="/assets/atelier-icon.png" width="42" height="42" alt=""><span>Atelier Tools</span></a>
  <nav class="nav-links" aria-label="{esc(c['home'])}">{links}<a href="{url(lang,'privacy.html')}">{esc(c['nav'][2])}</a></nav>
- <label><span class="sr-only">{esc(c['language'])}</span><select class="language" aria-label="{esc(c['language'])}">{options}</select></label>
+ <div class="header-tools">{island(lang,page,'MotionToggle')}{island(lang,page,'LanguagePicker')}</div>
  </div></header>'''
 
 def frame(lang, page, content):
@@ -231,13 +236,13 @@ def frame(lang, page, content):
 <link rel="icon" type="image/png" href="/assets/atelier-icon.png"><link rel="apple-touch-icon" href="/assets/atelier-icon.png">
 <meta property="og:title" content="{esc(title)}"><meta property="og:image" content="{HOST}/assets/atelier-icon.png"><meta property="og:type" content="website">
 <link rel="stylesheet" href="/assets/site.css"><script defer src="/assets/site.js"></script></head>
-<body>{header(lang,page)}{content}<footer><div class="shell footer-row"><span>© 2026 MT-Corp · Atelier Tools<br>{esc(c['footer'])}</span><nav><a href="{url(lang,'index.html')}">{esc(c['home'])}</a><a href="{url(lang,'privacy.html')}">{esc(c['nav'][2])}</a><a href="mailto:{CONTACT}">{esc(c['contact'])}</a></nav></div></footer></body></html>\n'''
+<body data-page="{'home' if page=='index.html' else 'privacy'}">{header(lang,page)}{content}<footer><div class="shell footer-row"><span>© 2026 MT-Corp · Atelier Tools<br>{esc(c['footer'])}</span><nav><a href="{url(lang,'index.html')}">{esc(c['home'])}</a><a href="{url(lang,'privacy.html')}">{esc(c['nav'][2])}</a><a href="mailto:{CONTACT}">{esc(c['contact'])}</a><a href="/assets/third-party-notices.txt">{'Licencias' if lang=='es' else 'Licences'}</a></nav></div></footer></body></html>\n'''
 
 def home(lang):
  c=COPY[lang]
  cards=''.join(f'<article class="feature-card"><div class="feature-icon" aria-hidden="true">{esc(mark)}</div><h3>{esc(title)}</h3><p>{esc(text)}</p></article>' for mark,title,text in c['cards'])
  faqs=''.join(f'<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>' for q,a in c['faq'])
- content=f'''<main id="main"><section class="hero shell"><div><div class="eyebrow">{esc(c['eyebrow'])}</div><h1>{esc(c['headline'])}</h1><p class="lead">{esc(c['lead'])}</p><p class="status">{esc(c['status'])}</p><div class="actions"><a class="button" href="#herramientas">{esc(c['explore'])}</a><a class="button secondary" href="{url(lang,'privacy.html')}">{esc(c['privacy'])}</a></div></div><div class="hero-art"><div class="halo" aria-hidden="true"></div><img class="hero-logo" src="/assets/atelier-icon.png" width="240" height="240" alt="{esc(c['icon_alt'])}"></div></section>
+ content=f'''<main id="main"><section class="hero shell"><div class="hero-copy"><div class="eyebrow">{esc(c['eyebrow'])}</div><h1>{esc(c['headline'])}</h1><p class="lead">{esc(c['lead'])}</p><p class="status">{esc(c['status'])}</p><div class="actions"><a class="button" href="#herramientas">{esc(c['explore'])}<span aria-hidden="true">↗</span></a><a class="button secondary" href="{url(lang,'privacy.html')}">{esc(c['privacy'])}</a></div></div>{island(lang,'index.html','SpatialScene')}</section>
 <section id="herramientas" class="section shell"><div class="section-heading"><div class="eyebrow">{esc(c['section_eyebrow'])}</div><h2>{esc(c['section_title'])}</h2><p>{esc(c['section_lead'])}</p></div><p class="notice">{esc(c['status_note'])}</p><div class="feature-grid">{cards}</div><p class="notice">{esc(c['copy_note'])}</p></section>
 <section class="section shell"><div class="cta"><div><h2>{esc(c['look_title'])}</h2><p>{esc(c['look_text'])}</p></div></div></section>
 <section id="preguntas" class="section shell"><div class="section-heading"><h2>{esc(c['faq_title'])}</h2></div><div class="faq">{faqs}</div></section>
@@ -249,7 +254,7 @@ def privacy(lang):
  toc=''.join(f'<li><a href="#{key}">{esc(title)}</a></li>' for key,title,_ in c['policy'])
  sections=''.join(f'<section><h2 id="{key}">{i}. {esc(title)}</h2>'+''.join(f'<p>{esc(p)}</p>' for p in paragraphs)+'</section>' for i,(key,title,paragraphs) in enumerate(c['policy'],1))
  providers=''.join(f'<li><a href="{href}">{esc(title)}</a></li>' for title,href in PROVIDERS)
- content=f'''<main id="main" class="shell legal"><article><h1>{esc(c['privacy_title'])}</h1><p>{esc(c['updated'])}</p><p>{esc(c['policy_intro'])}</p><nav class="toc" aria-label="{esc(c['toc_title'])}"><strong>{esc(c['toc_title'])}</strong><ul>{toc}</ul></nav>{sections}<h2>{esc(c['provider_title'])}</h2><ul>{providers}</ul><h2 id="contact">{esc(c['contact_title'])}</h2><p>{esc(c['contact_text'])} <a href="mailto:{CONTACT}">{CONTACT}</a>.</p></article></main>'''
+ content=f'''<main id="main" class="shell legal"><div class="privacy-intro"><div><div class="eyebrow">Atelier · MT-Corp</div><h1>{esc(c['privacy_title'])}</h1><p class="updated">{esc(c['updated'])}</p><p class="lead">{esc(c['policy_intro'])}</p></div>{island(lang,'privacy.html','SpatialScene')}</div><article><nav class="toc" aria-label="{esc(c['toc_title'])}"><strong>{esc(c['toc_title'])}</strong><ul>{toc}</ul></nav>{sections}<h2>{esc(c['provider_title'])}</h2><ul>{providers}</ul><h2 id="contact">{esc(c['contact_title'])}</h2><p>{esc(c['contact_text'])} <a href="mailto:{CONTACT}">{CONTACT}</a>.</p></article></main>'''
  return frame(lang,'privacy.html',content)
 
 if __name__ == '__main__':

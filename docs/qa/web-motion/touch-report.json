@@ -1,0 +1,12 @@
+[
+  {
+    "route": "/index.html",
+    "touchDrag": "0.8399999999999999deg",
+    "verticalScroll": true
+  },
+  {
+    "route": "/privacy.html",
+    "touchDrag": "0.8399999999999999deg",
+    "verticalScroll": true
+  }
+]

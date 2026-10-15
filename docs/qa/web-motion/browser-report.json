@@ -1,0 +1,313 @@
+{
+  "cases": 54,
+  "report": [
+    {
+      "route": "/index.html",
+      "width": 320,
+      "height": 740,
+      "result": "passed"
+    },
+    {
+      "route": "/privacy.html",
+      "width": 320,
+      "height": 740,
+      "result": "passed"
+    },
+    {
+      "route": "/en/index.html",
+      "width": 320,
+      "height": 740,
+      "result": "passed"
+    },
+    {
+      "route": "/en/privacy.html",
+      "width": 320,
+      "height": 740,
+      "result": "passed"
+    },
+    {
+      "route": "/fr/index.html",
+      "width": 320,
+      "height": 740,
+      "result": "passed"
+    },
+    {
+      "route": "/fr/privacy.html",
+      "width": 320,
+      "height": 740,
+      "result": "passed"
+    },
+    {
+      "route": "/index.html",
+      "width": 390,
+      "height": 844,
+      "result": "passed"
+    },
+    {
+      "route": "/privacy.html",
+      "width": 390,
+      "height": 844,
+      "result": "passed"
+    },
+    {
+      "route": "/en/index.html",
+      "width": 390,
+      "height": 844,
+      "result": "passed"
+    },
+    {
+      "route": "/en/privacy.html",
+      "width": 390,
+      "height": 844,
+      "result": "passed"
+    },
+    {
+      "route": "/fr/index.html",
+      "width": 390,
+      "height": 844,
+      "result": "passed"
+    },
+    {
+      "route": "/fr/privacy.html",
+      "width": 390,
+      "height": 844,
+      "result": "passed"
+    },
+    {
+      "route": "/index.html",
+      "width": 768,
+      "height": 1024,
+      "result": "passed"
+    },
+    {
+      "route": "/privacy.html",
+      "width": 768,
+      "height": 1024,
+      "result": "passed"
+    },
+    {
+      "route": "/en/index.html",
+      "width": 768,
+      "height": 1024,
+      "result": "passed"
+    },
+    {
+      "route": "/en/privacy.html",
+      "width": 768,
+      "height": 1024,
+      "result": "passed"
+    },
+    {
+      "route": "/fr/index.html",
+      "width": 768,
+      "height": 1024,
+      "result": "passed"
+    },
+    {
+      "route": "/fr/privacy.html",
+      "width": 768,
+      "height": 1024,
+      "result": "passed"
+    },
+    {
+      "route": "/index.html",
+      "width": 1440,
+      "height": 1000,
+      "result": "passed"
+    },
+    {
+      "route": "/privacy.html",
+      "width": 1440,
+      "height": 1000,
+      "result": "passed"
+    },
+    {
+      "route": "/en/index.html",
+      "width": 1440,
+      "height": 1000,
+      "result": "passed"
+    },
+    {
+      "route": "/en/privacy.html",
+      "width": 1440,
+      "height": 1000,
+      "result": "passed"
+    },
+    {
+      "route": "/fr/index.html",
+      "width": 1440,
+      "height": 1000,
+      "result": "passed"
+    },
+    {
+      "route": "/fr/privacy.html",
+      "width": 1440,
+      "height": 1000,
+      "result": "passed"
+    },
+    {
+      "route": "/index.html",
+      "width": 2560,
+      "height": 1440,
+      "result": "passed"
+    },
+    {
+      "route": "/privacy.html",
+      "width": 2560,
+      "height": 1440,
+      "result": "passed"
+    },
+    {
+      "route": "/en/index.html",
+      "width": 2560,
+      "height": 1440,
+      "result": "passed"
+    },
+    {
+      "route": "/en/privacy.html",
+      "width": 2560,
+      "height": 1440,
+      "result": "passed"
+    },
+    {
+      "route": "/fr/index.html",
+      "width": 2560,
+      "height": 1440,
+      "result": "passed"
+    },
+    {
+      "route": "/fr/privacy.html",
+      "width": 2560,
+      "height": 1440,
+      "result": "passed"
+    },
+    {
+      "route": "/index.html",
+      "width": 844,
+      "height": 390,
+      "result": "passed"
+    },
+    {
+      "route": "/privacy.html",
+      "width": 844,
+      "height": 390,
+      "result": "passed"
+    },
+    {
+      "route": "/en/index.html",
+      "width": 844,
+      "height": 390,
+      "result": "passed"
+    },
+    {
+      "route": "/en/privacy.html",
+      "width": 844,
+      "height": 390,
+      "result": "passed"
+    },
+    {
+      "route": "/fr/index.html",
+      "width": 844,
+      "height": 390,
+      "result": "passed"
+    },
+    {
+      "route": "/fr/privacy.html",
+      "width": 844,
+      "height": 390,
+      "result": "passed"
+    },
+    {
+      "route": "/index.html",
+      "mode": "no-js",
+      "result": "passed"
+    },
+    {
+      "route": "/privacy.html",
+      "mode": "no-js",
+      "result": "passed"
+    },
+    {
+      "route": "/en/index.html",
+      "mode": "no-js",
+      "result": "passed"
+    },
+    {
+      "route": "/en/privacy.html",
+      "mode": "no-js",
+      "result": "passed"
+    },
+    {
+      "route": "/fr/index.html",
+      "mode": "no-js",
+      "result": "passed"
+    },
+    {
+      "route": "/fr/privacy.html",
+      "mode": "no-js",
+      "result": "passed"
+    },
+    {
+      "route": "/index.html",
+      "mode": "reduced-motion",
+      "result": "passed"
+    },
+    {
+      "route": "/privacy.html",
+      "mode": "reduced-motion",
+      "result": "passed"
+    },
+    {
+      "route": "/en/index.html",
+      "mode": "reduced-motion",
+      "result": "passed"
+    },
+    {
+      "route": "/en/privacy.html",
+      "mode": "reduced-motion",
+      "result": "passed"
+    },
+    {
+      "route": "/fr/index.html",
+      "mode": "reduced-motion",
+      "result": "passed"
+    },
+    {
+      "route": "/fr/privacy.html",
+      "mode": "reduced-motion",
+      "result": "passed"
+    },
+    {
+      "route": "/index.html",
+      "mode": "large-text",
+      "result": "passed"
+    },
+    {
+      "route": "/privacy.html",
+      "mode": "large-text",
+      "result": "passed"
+    },
+    {
+      "route": "/en/index.html",
+      "mode": "large-text",
+      "result": "passed"
+    },
+    {
+      "route": "/en/privacy.html",
+      "mode": "large-text",
+      "result": "passed"
+    },
+    {
+      "route": "/fr/index.html",
+      "mode": "large-text",
+      "result": "passed"
+    },
+    {
+      "route": "/fr/privacy.html",
+      "mode": "large-text",
+      "result": "passed"
+    }
+  ],
+  "errors": [],
+  "external": []
+}
