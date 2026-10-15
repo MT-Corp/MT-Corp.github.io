@@ -10,6 +10,7 @@
 - La escena usa planos CSS con perspectiva 3D, el icono original, reflejos, partículas y motivos documentales. Se puede girar mediante arrastre o flechas y centrar de nuevo. Los botones Documentos/QR/Firma cambian la composición. No es WebGL ni una simulación funcional de la aplicación. Se identifica como ilustración, sin inventar capturas de pantalla.
 - Privacidad mantiene su texto completo sin planos de texto giratorios. El índice, el indicador de lectura y los encabezados facilitan la navegación.
 - Movimiento reducido del sistema y pausa manual detienen los efectos. No se capturan sensores, cámara ni datos personales. Las animaciones se pausan fuera de pantalla y en segundo plano; el desplazamiento vertical sigue siendo nativo.
+- Los enlaces a CSS y JavaScript incorporan una huella del contenido para evitar que una visita previa reutilice recursos antiguos tras una publicación.
 - No se añaden analítica, cookies, almacenamiento local o peticiones a un CDN. React, su código y sus avisos MIT se sirven desde el propio sitio.
 - `app-ads.txt`, el icono original y los textos preparados para Play permanecen intactos. No se modifica la app Android ni Play Console.
 

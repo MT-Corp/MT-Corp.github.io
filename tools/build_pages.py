@@ -2,6 +2,7 @@
 from html import escape as esc
 from pathlib import Path
 import json
+import hashlib
 
 ROOT = Path(__file__).resolve().parents[1]
 CONTACT = 'mtcorp0505@gmail.com'
@@ -215,6 +216,10 @@ def island(lang, page, name):
  data=json.loads((ROOT/'assets/components.json').read_text(encoding='utf-8'))[lang][page][name]
  return f'<div data-component="{name}" data-props="{esc(json.dumps(data["props"],ensure_ascii=False),quote=True)}">{data["html"]}</div>'
 
+def asset(name):
+ digest=hashlib.sha256((ROOT/'assets'/name).read_bytes()).hexdigest()[:12]
+ return f'/assets/{name}?v={digest}'
+
 def header(lang, page):
  c = COPY[lang]
  links = ''.join(f'<a href="{url(lang,"index.html")}#{anchor}">{esc(text)}</a>' for anchor,text in zip(['herramientas','preguntas'],c['nav'][:2]))
@@ -235,7 +240,7 @@ def frame(lang, page, content):
 <title>{esc(title)}</title><link rel="canonical" href="{HOST}{url(lang,page)}">{alternates}
 <link rel="icon" type="image/png" href="/assets/atelier-icon.png"><link rel="apple-touch-icon" href="/assets/atelier-icon.png">
 <meta property="og:title" content="{esc(title)}"><meta property="og:image" content="{HOST}/assets/atelier-icon.png"><meta property="og:type" content="website">
-<link rel="stylesheet" href="/assets/site.css"><script defer src="/assets/site.js"></script></head>
+<link rel="stylesheet" href="{asset('site.css')}"><script defer src="{asset('site.js')}"></script></head>
 <body data-page="{'home' if page=='index.html' else 'privacy'}">{header(lang,page)}{content}<footer><div class="shell footer-row"><span>© 2026 MT-Corp · Atelier Tools<br>{esc(c['footer'])}</span><nav><a href="{url(lang,'index.html')}">{esc(c['home'])}</a><a href="{url(lang,'privacy.html')}">{esc(c['nav'][2])}</a><a href="mailto:{CONTACT}">{esc(c['contact'])}</a><a href="/assets/third-party-notices.txt">{'Licencias' if lang=='es' else 'Licences'}</a></nav></div></footer></body></html>\n'''
 
 def home(lang):
