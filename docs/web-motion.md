@@ -63,3 +63,7 @@ Para repetir los recorridos táctiles con el mismo entorno de Playwright:
 ```sh
 ATELIER_CHROMIUM=/ruta/a/chromium node tools/check_touch.cjs
 ```
+
+## Entrega
+
+El rediseño se incorporó en `0d45ac5ac83083ea0b9ac4dcffa185ef38a6f820`; las rutas con versión por huella de contenido se incorporaron en `e6c8c36ae771f38c46c2d6da4d7b823aa53f4876`. Las seis páginas volvieron a pasar las comprobaciones de texto grande y selector con esos enlaces versionados. La verificación estructural y las reproducciones se mantienen. La disponibilidad pública debe comprobarse contra los recursos desplegados, no inferirse únicamente de que `main` se actualice.
