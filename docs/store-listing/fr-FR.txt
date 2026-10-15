@@ -1,0 +1,31 @@
+Atelier Tools : PDF et QR
+
+Créez et numérisez des PDF, générez des codes QR et convertissez vos documents
+
+Atelier Tools réunit des outils pour créer des PDF, numériser des pages, générer des codes QR et travailler sur vos documents depuis Android. Enregistrez vos projets et reprenez-les quand vous le souhaitez.
+
+CRÉEZ ET ORGANISEZ VOS PDF
+Ajoutez du texte, des images et des codes QR. Ajustez la couleur, la taille, l’alignement et les styles du texte. Réorganisez les pages et annulez ou rétablissez vos modifications.
+
+LISEZ ET ANNOTEZ UNE COPIE
+Ouvrez vos PDF, parcourez les pages, zoomez et recherchez du texte lorsqu’il est disponible. Importez une copie dans l’éditeur pour ajouter des annotations, des formes ou une signature manuscrite de la couleur de votre choix. Les pages importées deviennent des images d’arrière-plan : le texte d’origine n’est pas automatiquement converti en texte modifiable. Une signature manuscrite ajoutée ne constitue pas une signature numérique certifiée.
+
+NUMÉRISEZ ET RECONNAISSEZ DU TEXTE
+Photographiez vos pages ou sélectionnez des images existantes. Ajustez le cadrage et les filtres. La reconnaissance de texte sur l’appareil permet de consulter et de copier le texte imprimé reconnu. Vérifiez le résultat, notamment avec les images floues ou l’écriture manuscrite.
+
+CRÉEZ ET SCANNEZ DES CODES QR
+Créez des codes pour du texte, des liens, le Wi-Fi, des coordonnées et d’autres formats compatibles. Exportez-les au format PNG, partagez-les et conservez vos favoris. Vérifiez les liens avant de les ouvrir.
+
+CONVERTISSEZ ET CONSULTEZ VOS DOCUMENTS
+Effectuez des conversions entre PDF, Word et PowerPoint. Le lecteur PPTX propose une navigation et une présentation statiques ; les animations, transitions et contenus multimédias ne sont pas garantis. Les conversions peuvent modifier les polices, le positionnement et les éléments complexes. Vérifiez le résultat avant de le partager.
+
+PERSONNALISEZ VOTRE ESPACE
+Choisissez vos thèmes et options d’apparence Glass. Utilisez la navigation Classique ou Semiluna et ajustez les effets disponibles. Le mode fluide réduit les effets visuels pour privilégier l’utilisation.
+
+TRAITEMENT LOCAL ET PUBLICITÉ
+La création et le traitement des documents s’effectuent sur votre appareil, sans compte Atelier. L’application contient des annonces et certains outils ou styles nécessitent un déblocage. Les annonces avec récompense et les services publicitaires nécessitent Internet et dépendent de leur disponibilité. Les SDK peuvent transmettre des données techniques et publicitaires, conformément à la politique de confidentialité ; traitement local ne signifie pas absence totale de communications réseau.
+
+Chaque outil précise ses limites et sa disponibilité. Atelier n’intègre pas d’assistant génératif propriétaire validé et ne garantit pas une fidélité complète avec les autres applications documentaires.
+
+Confidentialité : https://mt-corp.github.io/fr/privacy.html
+Assistance : mtcorp0505@gmail.com

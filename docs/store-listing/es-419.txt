@@ -1,0 +1,31 @@
+Atelier Tools: PDF y QR
+
+Crea, escanea y organiza PDF, genera QR y convierte documentos desde tu Android
+
+Atelier Tools reúne herramientas para crear PDF, digitalizar páginas, generar códigos QR y trabajar con documentos desde Android. Guarda tus proyectos y continúa cuando lo necesites.
+
+CREA Y ORGANIZA PDF
+Añade texto, imágenes y códigos QR. Ajusta color, tamaño, alineación y estilos de texto; organiza las páginas y utiliza deshacer y rehacer para revisar tus cambios.
+
+LEE Y ANOTA UNA COPIA
+Abre PDF, navega entre páginas, amplía y busca texto cuando esté disponible. Importa una copia al editor para añadir anotaciones, formas o una firma manuscrita con color personalizado. Las páginas importadas se usan como imágenes de fondo: el texto original no se convierte automáticamente en texto editable. Añadir una firma manuscrita no equivale a una firma digital certificada.
+
+ESCANEA Y RECONOCE TEXTO
+Captura páginas con la cámara o selecciona imágenes. Ajusta el encuadre y los filtros. Utiliza el OCR local para consultar y copiar texto impreso reconocido; revisa los resultados, especialmente con imágenes borrosas o texto manuscrito.
+
+GENERA Y ESCANEA QR
+Crea códigos para texto, enlaces, Wi-Fi, contacto y otros formatos compatibles. Exporta códigos como PNG, compártelos y conserva tus favoritos. Revisa los enlaces antes de abrirlos.
+
+CONVIERTE Y CONSULTA DOCUMENTOS
+Trabaja con conversiones entre PDF, Word y PowerPoint. El lector PPTX ofrece navegación y presentación estática; no garantiza animaciones, transiciones ni reproducción multimedia. Las conversiones pueden modificar fuentes, posición y elementos complejos. Comprueba el resultado antes de compartirlo.
+
+PERSONALIZA TU ESPACIO
+Elige temas y opciones de apariencia Glass. Utiliza navegación Clásica o Semiluna y ajusta los efectos disponibles. El Modo fluido reduce efectos visuales para priorizar el uso.
+
+PROCESAMIENTO LOCAL Y PUBLICIDAD
+La creación y el procesamiento documental se realizan en el dispositivo, sin una cuenta de Atelier. La aplicación contiene anuncios y algunas herramientas o estilos requieren desbloqueo. Los anuncios con recompensa y los servicios publicitarios necesitan Internet y dependen de su disponibilidad. Los SDK pueden transmitir datos técnicos y publicitarios conforme a la política de privacidad; procesamiento local no significa ausencia total de comunicaciones.
+
+Los límites y la disponibilidad se indican en cada herramienta. Atelier no incluye un asistente generativo propio validado ni promete fidelidad completa con otras aplicaciones de documentos.
+
+Privacidad: https://mt-corp.github.io/privacy.html
+Asistencia: mtcorp0505@gmail.com

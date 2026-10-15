@@ -1,0 +1,31 @@
+Atelier Tools: PDF & QR
+
+Create and scan PDFs, generate QR codes, and convert documents on Android
+
+Atelier Tools brings PDF creation, page scanning, QR codes, and document tools together on Android. Save your projects and pick up where you left off.
+
+CREATE AND ORGANIZE PDFs
+Add text, images, and QR codes. Adjust text color, size, alignment, and styles; arrange pages and use undo and redo to review your changes.
+
+READ AND ANNOTATE A COPY
+Open PDFs, browse pages, zoom, and search available text. Import a copy into the editor to add annotations, shapes, or a handwritten signature in a custom color. Imported pages become background images: existing text is not automatically converted into editable text. Adding a handwritten signature does not create a certified digital signature.
+
+SCAN AND RECOGNIZE TEXT
+Capture pages with your camera or select existing images. Adjust the crop and filters. Use on-device OCR to view and copy recognized printed text. Check the results, especially with blurry images or handwriting.
+
+CREATE AND SCAN QR CODES
+Make codes for text, links, Wi-Fi, contact details, and other supported formats. Export as PNG, share your codes, and keep your favorites. Check links before opening them.
+
+CONVERT AND VIEW DOCUMENTS
+Convert between PDF, Word, and PowerPoint formats. The PPTX reader provides navigation and static presentation; animations, transitions, and multimedia playback are not guaranteed. Conversions may change fonts, positioning, and complex elements. Review your results before sharing.
+
+MAKE IT YOURS
+Choose themes and Glass appearance options. Use Classic or Semiluna navigation and adjust available effects. Smooth mode reduces visual effects to prioritize usability.
+
+ON-DEVICE PROCESSING AND ADS
+Document creation and processing run on your device without an Atelier account. The app contains ads, and some tools or styles require an unlock. Rewarded ads and advertising services need an internet connection and depend on availability. SDKs may transmit technical and advertising data as described in the privacy policy; on-device processing does not mean the app never communicates over the network.
+
+Each tool explains its limits and availability. Atelier does not include a validated proprietary generative assistant or promise full fidelity with other document apps.
+
+Privacy: https://mt-corp.github.io/en/privacy.html
+Support: mtcorp0505@gmail.com
